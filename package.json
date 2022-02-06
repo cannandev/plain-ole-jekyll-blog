@@ -1,0 +1,25 @@
+{
+  "name": "plain-jekyll-blog",
+  "version": "1.0.0",
+  "description": "A plain ole Jekyll blog flavored with Tailwindcss and ES Javascript",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "selenium-webdriver": "^4.1.1"
+  },
+  "scripts": {
+    "start": "bundle exec jekyll serve",
+    "pa11y": "pa11y-ci http://localhost:4000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cannandev/plain-jekyll-blog.git"
+  },
+  "author": "Claire Annan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cannandev/plain-jekyll-blog/issues"
+  },
+  "homepage": "https://github.com/cannandev/plain-jekyll-blog#readme"
+}

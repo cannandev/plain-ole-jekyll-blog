@@ -4,11 +4,12 @@
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+
+    <div class="flex justify-between">
+     <a id="site-title" rel="author" href="{{ '/' | relative_url }}"><img src="https://cannandev.com/assets/images/global/logo-black.png" class="max-w-xs" alt="{{ site.title | escape }}"></a>
 
     {%- if titles_size > 0 -%}
       <nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
             <svg viewBox="0 0 18 15" width="18px" height="15px">
@@ -17,7 +18,7 @@
           </span>
         </label>
 
-        <div class="trigger">
+        <div class="trigger hidden">
           {%- for path in page_paths -%}
             {%- assign my_page = site.pages | where: "path", path | first -%}
             {%- if my_page.title -%}
@@ -27,5 +28,7 @@
         </div>
       </nav>
     {%- endif -%}
+    </div>
+
   </div>
 </header>

@@ -1,37 +1,30 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+<footer class="bg-black text-white">
+  <div class="max-w-7xl mx-auto py-12 px-4 space-y-6">
+    <div class="footer__links flex flex-col md:flex-row justify-between">
+      <ul class="text-2xl pb-12 md:pb-0">
+        <li><a href="{{ '/posts/' | url }}" alt="Archive of blog articles">Articles</a></li>
+        <li><a href="{{ '/about/' | url }}" alt="Learn more about Claire Annan">About</a></li>
+        <li><a href="{{ '/contact/' | url }}" alt="Contact form">Contact</a></li>
+      </ul>
 
-  <div class="wrapper">
+      <p class="text-2xl md:w-1/3 md:text-3xl md:mt-0 md:place-self-end md:text-right">
+        Follow me on <a href="{{ 'https://twitter.com/cannandev' | url }}" class="underline text-indigo-200"
+          title="My Twitter feed">Twitter</a>
+        &amp;
+        <a href="{{ 'https://github.com/cannandev' | url }}" class="underline text-indigo-200"
+          title="My Github repositories">Github</a>
+        or just connect with me on <a href="{{ 'https://linkedin.com/in/ClaireAnnan' | url }}"
+          class="underline text-indigo-200" title="My LinkedIn page">LinkedIn</a>.
+      </p>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col">
-        <p class="feed-sitemap">
-          <a href="{{ 'sitemap.xml' | relative_url }}">
-            <svg class="svg-icon orange">
-              <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
-            </svg><span>Sitemap</span>
-          </a>
-        </p>
-      {%- if site.author %}
-        <ul class="contact-list">
-          {% if site.author.name -%}
-            <li class="p-name">{{ site.author.name | escape }}</li>
-          {% endif -%}
-          {% if site.author.email -%}
-            <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
-          {%- endif %}
-        </ul>
-      {%- endif %}
-      </div>
-      <div class="footer-col">
-        <p>{{ site.description | escape }}</p>
-      </div>
     </div>
+    <div class="footer__meta flex flex-col space-y-6 items-end md:flex-row md:justify-between">
+      <small class="text-gray-200 md:w-1/2">&copy; Copyright 2021 Claire Annan, @cannandev. All rights reserved. Various
+        trademarks
+        held by their respective owners.</small>
 
-    <div class="social-links">
-      {%- include social.html -%}
+      <a href="{{ '/' | url }}"><img class="h-10 w-auto" src="https://cannandev.com/assets/images/global/logo-white.png" alt="Home of {{ metadata.title }}"></a>
     </div>
-
   </div>
 
 </footer>

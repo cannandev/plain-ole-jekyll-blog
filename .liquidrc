@@ -1,0 +1,58 @@
+{
+  "ignore": [
+    {
+      "type": "liquid",
+      "begin": "comment",
+      "end": "endcomment"
+    },
+    {
+      "type": "html",
+      "begin": "script",
+      "end": "script"
+    },
+    {
+      "type": "html",
+      "begin": "style",
+      "end": "style"
+    }
+  ],
+  "html": {
+    "correct": true,
+    "force_attribute": false,
+    "braces": true,
+    "preserve": 2,
+    "unformatted": false,
+    "brace_block": true,
+    "content": true,
+    "space_close": true
+  },
+  "js": {
+    "preserve": 1,
+    "method_chain": 0,
+    "quote_convert": "none",
+    "format_array": "indent",
+    "format_object": "indent",
+    "braces": true,
+    "no_semicolon": false,
+    "brace_block": true
+  },
+  "scss": {
+    "css_insert_lines": true,
+    "preserve": 2,
+    "braces": false,
+    "brace_block": true
+  },
+  "css": {
+    "css_insert_lines": true,
+    "preserve": 2,
+    "braces": false,
+    "brace_block": true
+  },
+  "json": {
+    "preserve": 0,
+    "braces": true,
+    "brace_block": true,
+    "no_semicolon": true,
+    "format_array": "indent"
+  }
+}

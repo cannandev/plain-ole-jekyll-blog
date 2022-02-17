@@ -721,6 +721,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(245 158 11 / var(--tw-bg-opacity));
 }
 
+.bg-amber-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 119 6 / var(--tw-bg-opacity));
+}
+
+.bg-amber-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 191 36 / var(--tw-bg-opacity));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;

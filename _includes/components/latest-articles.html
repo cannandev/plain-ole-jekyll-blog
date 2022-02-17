@@ -2,32 +2,20 @@
   <div class="max-w-7xl mx-auto">
     <h2 class="text-4xl tracking-tight font-extrabold text-white text-center">Latest articles</h2>
     <div class="lg:grid grid-flow-col gap-8">
-      <a href="#"
-        class="flex flex-wrap flex-col items-start bg-white rounded p-4 mt-6 transform hover:-rotate-6 hover:drop-shadow-lg">
-        <h3 class="font-bold text-xl border-b-4 border-b-amber-500">article title</h3>
-        <p class="mt-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A earum doloribus vitae non ex
-          reiciendis, quis possimus dolorum, nostrum praesentium nobis sapiente quidem.</p>
+      {% assign posts = site.posts | head(3) %}
+      {%- if posts.size > 0 -%}
+      {%- for post in posts limit:3 -%}
+      <a class="flex flex-wrap flex-col items-start bg-white rounded p-4 mt-6 transform hover:-rotate-6 hover:drop-shadow-lg"
+        href="{{ post.url | relative_url }}">
+        <span class="rounded text-sm bg-indigo-100 text-black uppercase">{{ post.category }}</span>
+        <h3 class="font-bold text-xl border-b-4 border-b-amber-500">{{ post.title | escape }}</h3>
+        <p class="mt-6">{{ post.excerpt }}</p>
         <button
           class="inline-flex items-center justify-center px-5 py-3 mt-6 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">Call
           to action</button>
       </a>
-      <a href="#"
-        class="flex flex-wrap flex-col items-start bg-white rounded p-4 mt-6 transform hover:rotate-6 hover:drop-shadow-lg">
-        <h3 class="font-bold text-xl border-b-4 border-b-amber-500">article title</h3>
-        <p class="mt-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam sapiente vero eum officia,
-          non quia?</p>
-        <button
-          class="inline-flex items-center justify-center px-5 py-3 mt-6 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">Call
-          to action</button>
-      </a>
-      <a href="#"
-        class="flex flex-wrap flex-col items-start bg-white rounded p-4 mt-6 transform hover:-rotate-6 hover:drop-shadow-lg">
-        <h3 class="font-bold text-xl border-b-4 border-b-amber-500">article title</h3>
-        <p class="mt-6">Lorem ipsum, dolor sit amet consectetur adipisicing sapiente vero eum officia non quia.</p>
-        <button
-          class="inline-flex items-center justify-center px-5 py-3 mt-6 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">Call
-          to action</button>
-      </a>
+      {%- endfor -%}
+      {%- endif -%}
     </div>
   </div>
 </section>

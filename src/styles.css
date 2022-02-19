@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .post-article h2 {
+    @apply text-3xl tracking-tight font-extrabold mt-8;
+  }
+}

@@ -1,0 +1,22 @@
+---
+layout: page
+permalink: /posts/
+title: All articles
+---
+
+{% assign posts = site.posts %}
+{%- if posts.size > 0 -%}
+<ul>
+  {%- for post in posts -%}
+  <li class="mb-4">
+    <a class="text-2xl lg:text-4xl tracking-tight font-extrabold text-indigo-500 hover:text-indigo-700 hover:underline mt-8"
+      href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+    <strong class="rounded text-sm p-1 bg-indigo-100 text-black uppercase">{{ post.category }}</strong>
+    {%- assign date_format = "%b %-d, %Y" -%}
+    <time class="block" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+      Posted on {{ post.date | date: date_format }}
+    </time>
+  </li>
+  {%- endfor -%}
+</ul>
+{%- endif -%}

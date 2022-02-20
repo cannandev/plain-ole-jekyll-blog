@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .content a {
+    @apply text-blue-500 hover:text-blue-700 hover:underline;
+  }
+
+  .content p {
+    @apply mt-4;
+  }
+
+  .content h2 {
+    @apply text-3xl tracking-tight font-extrabold mt-8;
+  }
+
+  .content h3 {
+    @apply text-2xl tracking-tight font-extrabold mt-8;
+  }
+
+  .content h4 {
+    @apply text-xl tracking-tight font-extrabold text-gray-500 mt-8;
+  }
+
+  .content ul {
+    @apply list-disc ml-8;
+  }
+
+  .content ol {
+    @apply list-decimal ml-8;
+  }
+
+  .content blockquote {
+    @apply font-serif text-2xl text-gray-500 italic mt-8 bg-none bg-no-repeat bg-left bg-[length:6rem_auto] lg:pl-32 lg:bg-[url('/src/img/quote.png')];
+  }
+
+  .content cite {
+    @apply block font-sans text-sm text-black not-italic text-center;
+  }
+}

@@ -3,13 +3,18 @@
   "version": "1.0.0",
   "description": "A plain ole Jekyll blog flavored with Tailwindcss and ES Javascript",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "postcss": "^8.4.6"
+  },
   "devDependencies": {
-    "selenium-webdriver": "^4.1.1"
+    "selenium-webdriver": "^4.1.1",
+    "tailwindcss": "^3.0.18"
   },
   "scripts": {
-    "start": "bundle exec jekyll serve",
-    "pa11y": "pa11y-ci http://localhost:4000",
+    "build": "bundle exec jekyll build",
+    "watch": "npx tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch",
+    "start": "bundle exec jekyll serve & npm run watch",
+    "pa11y": "pa11y-ci -s http://localhost:4000/sitemap.xml -x .xml",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

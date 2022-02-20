@@ -11,7 +11,7 @@
     "tailwindcss": "^3.0.18"
   },
   "scripts": {
-    "build": "bundle exec jekyll serve",
+    "build": "bundle exec jekyll build",
     "watch": "npx tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch",
     "start": "bundle exec jekyll serve & npm run watch",
     "pa11y": "pa11y-ci -s http://localhost:4000/sitemap.xml -x .xml",

@@ -12,7 +12,7 @@ layout: default
     {%- assign date_format = "%b %-d, %Y" -%}
   </header>
 
-  <div class="text-lg mt-8" itemprop="articleBody">
+  <div class="{% if page.classes %}{{ page.classes }}{% endif %} text-lg mt-8" itemprop="articleBody">
     {{ content }}
   </div>
 

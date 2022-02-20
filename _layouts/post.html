@@ -10,7 +10,8 @@ layout: default
       {{ page.title | escape }}
     </h1>
     <span class="block w-40 h-1 lg:h-1.5 bg-amber-500 mt-2"></span>
-    <p class="mt-8">Posted on
+    <p class="mt-8">
+      Posted on
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.date | date: date_format }}
@@ -22,8 +23,15 @@ layout: default
         {{ mdate | date: date_format }}
       </time>
       {%- endif -%}
+      ~
+      Time to read
     </p>
   </header>
+
+  <div>
+    <p class="font-serif text-7xl text-blue-300">"</p>
+    <p class="font-serif text-7xl text-blue-300">"</p>
+  </div>
 
   <div class="content text-lg mt-8" itemprop="articleBody">
     {{ content }}

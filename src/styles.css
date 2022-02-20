@@ -4,8 +4,13 @@
 
 @layer base {
   .content a {
-    @apply text-blue-500 hover:underline hover:text-blue-700;
+    @apply text-blue-500 hover:text-blue-700 hover:underline;
   }
+
+  .content p {
+    @apply mt-4;
+  }
+
   .content h2 {
     @apply text-3xl tracking-tight font-extrabold mt-8;
   }
@@ -27,7 +32,7 @@
   }
 
   .content blockquote {
-    @apply font-serif text-2xl text-gray-500 mt-8 pl-12 italic;
+    @apply font-serif text-2xl text-gray-500 italic mt-8 bg-none bg-no-repeat bg-left bg-[length:6rem_auto] lg:pl-32 lg:bg-[url('/src/img/quote.png')];
   }
 
   .content cite {

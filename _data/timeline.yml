@@ -1,17 +1,16 @@
-timeline:
-  - title: Event 1
-    type: work
-    date: date
-    image: none
-  - title: Event 2
-    type: life
-    date: date
-    image: none
-  - title: Event 3
-    type: work
-    date: date
-    image: none
-  - title: Event 4
-    type: work
-    date: date
-    image: none
+- title: Event 1
+  type: work
+  date: date
+  image: none
+- title: Event 2
+  type: life
+  date: date
+  image: none
+- title: Event 3
+  type: work
+  date: date
+  image: none
+- title: Event 4
+  type: work
+  date: date
+  image: none

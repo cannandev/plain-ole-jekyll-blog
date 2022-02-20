@@ -12,11 +12,12 @@ layout: default
     <span class="block w-40 h-1 lg:h-1.5 bg-amber-500 mt-2"></span>
     <p class="mt-8">
       Posted on
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      {%- assign date_format = "%b %-d, %Y" -%}
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.date | date: date_format }}
       </time>
       {%- if page.modified_date -%}
+      Modified on
       ~
       {%- assign mdate = page.modified_date | date_to_xmlschema -%}
       <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">

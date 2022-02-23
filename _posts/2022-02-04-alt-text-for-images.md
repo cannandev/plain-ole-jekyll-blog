@@ -7,4 +7,4 @@ category: design-for-devs
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore hic consectetur consequatur praesentium esse aut.
 
-Voluptatibus, accusantium totam id iure laboriosam, nisi reiciendis aspernatur iste ex porro cupiditate excepturi neque.
+Voluptatibus, accusantium totam ID iure laboriosam, nisi reiciendis aspernatur iste ex porro cupiditate excepturi neque.

@@ -8,4 +8,7 @@ mobileMenuToggle.addEventListener('click', e => {
     icon.classList.toggle('block')
     icon.classList.toggle('hidden')
   })
+
+  // Toggle mobile menu display
+  mobileMenu.classList.toggle('hidden')
 })

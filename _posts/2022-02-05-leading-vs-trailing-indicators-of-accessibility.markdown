@@ -12,12 +12,13 @@ These tools flag issues that should have been caught during development and poss
 
 So, what are leading indicators that can get us ahead of accessibility issues? How can we design products and build them accessibly long before we deploy them? Read on for three solid examples.
 
-## 1. You're looking for a percentage of users with disabilities
+## 1. Looking for a percentage of users with disabilities
 
 In a conversation with a project manager, she expressed her surprise to learn that accessibility also included designing for neurodiverse and dyslexic users. "I'd love to know how many of ours users are in this category so we can cater to them."
 
 Design for one, design for all.
-## 2. Your design is touch dependent.
+
+## 2. Designing touch-dependent components
 
 Examples
 

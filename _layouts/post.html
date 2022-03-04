@@ -1,31 +1,23 @@
 ---
 layout: default
 ---
+
 <article class="max-w-3xl mx-auto my-8 lg:my-10 px-4 lg:px-8" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header>
     <strong class="rounded text-sm p-1 bg-indigo-100 text-black uppercase">{{ page.category }}</strong>
-    <h1 class="text-4xl lg:text-5xl tracking-tight font-extrabold text-gray-900 md:text-6xl mt-8"
-      itemprop="name headline">
+    <h1 class="text-4xl lg:text-5xl tracking-tight font-extrabold text-gray-900 md:text-6xl mt-8" itemprop="name headline">
       {{ page.title | escape }}
     </h1>
     <span class="block w-40 h-1 lg:h-1.5 bg-amber-500 mt-2"></span>
     <p class="mt-8">
-      Posted on
-      {%- assign date_format = "%b %-d, %Y" -%}
+      Posted on {%- assign date_format = "%b %-d, %Y" -%}
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.date | date: date_format }}
-      </time>
-      {%- if page.modified_date -%}
-      Modified on
-      ~
-      {%- assign mdate = page.modified_date | date_to_xmlschema -%}
+      </time> {%- if page.modified_date -%} Modified on ~ {%- assign mdate = page.modified_date | date_to_xmlschema -%}
       <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
         {{ mdate | date: date_format }}
-      </time>
-      {%- endif -%}
-      ~
-      Time to read
+      </time> {%- endif -%} ~ Time to read
     </p>
   </header>
 
@@ -46,9 +38,19 @@ layout: default
   </aside>
   {% endif %}
 
-  <footer class="flex justify-between uppercase mt-8">
-    <a href="#">Previous</a>
-    <a href="#">Next</a>
-  </footer>
+  <footer class="flex justify-between  mt-8">
+		{% if page.previous %}
+    <a href="{{ page.previous.url }}">
+			<span class="block uppercase">Previous article</span>
+			<span class="block bold font-serif text-2xl">{{ page.previous.title }}</span>
+		</a>
+		{% endif %}
 
+		{% if page.next %}
+    <a href="{{ page.next.url }} " class="flex-grow text-right">
+			<span class="block uppercase">Next article</span>
+			<span class="block bold font-serif text-2xl">{{ page.next.title }}</span>
+		</a>
+		{% endif %}
+  </footer>
 </article>

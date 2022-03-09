@@ -6,3 +6,6 @@ vendor
 node_modules
 _posts
 */.DS_Store
+
+# Compiled css file
+dist/styles.css

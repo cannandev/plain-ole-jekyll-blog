@@ -22,3 +22,5 @@ There's no end to my musings. Here is where I keep track of future topics.
 * Content managers are users too!
 * Introducting the _Lead the Way_ series for product managers
 * Show, don't tell...sometimes
+* Should you move to Federalist?
+* Implementing i18n on NetlifyCMS

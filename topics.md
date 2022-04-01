@@ -7,6 +7,8 @@ classes: "content"
 
 There's no end to my musings. Here is where I keep track of future topics.
 
+## topics
+
 * Introducing the _Design for Devs_ series
 * Avoid these four mistakes when implementing a CMS
 * Why waterfall projects fail
@@ -29,3 +31,19 @@ There's no end to my musings. Here is where I keep track of future topics.
 * How to bring your team into alignment as an individual contributor
 * Vendor management: Is there ever a hand-off?
 * Planning to walk away: 5 tips for successful consulting
+* Code with me! Building the Ship Quotes application in NodeJS
+
+## And here are the tags
+
+* consulting
+* vendor management
+* design for devs
+* software development
+* tutorials
+* content design
+* ux research
+* product management
+* accessibility
+* spilling the tea
+* interview nightmares
+* introverts

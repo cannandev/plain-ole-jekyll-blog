@@ -11,7 +11,14 @@ There's no end to my musings. Here is where I keep track of future topics.
 
 * Introducing the _Design for Devs_ series
 * Avoid these four mistakes when implementing a CMS
-* Why waterfall projects fail
+* Still waterfall and you didn't even know it
+  * The formal phases of Waterfall
+  * Waiting for a MaxVP instead of an MVP
+  * Throwing it over the fence, handoff and other waterfall-speak
+  * Static dates are ticking time bombs
+  * Siloed workstreams
+  * One person in control of stakeholder communication
+  * One person in control of sizing things
 * Why project managers hate me - and why I'm ok with it
 * 5 Things Introverts Don't Understand
 * Microaggressions in the workplace - are you guilty?
@@ -23,6 +30,10 @@ There's no end to my musings. Here is where I keep track of future topics.
 * 5 ways to have an accessibile meeting
 * When to choose Drupal as your CMS
 * Content managers are users too!
+  * Conduct user research with your users
+  * Understand their workflow
+  * Use labels they're familiar with
+  * Plan CMS development as a product, not an afterthought
 * Introducting the _Lead the Way_ series for product managers
 * Show, don't tell...sometimes
 * Should you move to Federalist?

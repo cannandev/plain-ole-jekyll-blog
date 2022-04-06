@@ -43,6 +43,7 @@ There's no end to my musings. Here is where I keep track of future topics.
 * Vendor management: Is there ever a hand-off?
 * Planning to walk away: 5 tips for successful consulting
 * Code with me! Building the Ship Quotes application in NodeJS
+* Can you walk and chew gum at the same time?
 
 ## And here are the tags
 

@@ -11,6 +11,10 @@ There's no end to my musings. Here is where I keep track of future topics.
 
 * Introducing the _Design for Devs_ series
 * Avoid these four mistakes when implementing a CMS
+  * naming things your way
+  * only providing developer documentation
+  * scrape a site for content
+  * still allowing code in body fields
 * Still waterfall and you didn't even know it
   * The formal phases of Waterfall
   * Waiting for a MaxVP instead of an MVP
@@ -21,6 +25,11 @@ There's no end to my musings. Here is where I keep track of future topics.
   * One person in control of sizing things
 * Why project managers hate me - and why I'm ok with it
 * 5 Things Introverts Don't Understand
+  * "Getting to know you" at a large gathering
+  * "Would you like me to invite anyone else?"
+  * "You looked lonely"
+  * Random phone calls
+  * Unannounced visits
 * Microaggressions in the workplace - are you guilty?
 * 6 Accessibility misconceptions
 * How I use lists on a project

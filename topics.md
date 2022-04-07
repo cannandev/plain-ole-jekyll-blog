@@ -45,17 +45,27 @@ There's no end to my musings. Here is where I keep track of future topics.
 * Code with me! Building the Ship Quotes application in NodeJS
 * Can you walk and chew gum at the same time?
 
-## And here are the tags
+## Now here are the post categories
+
+* blog
+* reviews
+* tutorials
+
+## and some post tags
 
 * consulting
 * vendor management
-* design for devs
+* design-for-devs
 * software development
-* tutorials
+* jekyll
+* drupal
+* CMS
 * content design
+* agile
 * ux research
 * product management
 * accessibility
-* spilling the tea
+* spill the tea
 * interview nightmares
 * introverts
+* best practices

@@ -52,7 +52,7 @@ There's no end to my musings. Here is where I keep track of future topics.
         * eye tracking
         * surveys
         * customer feedback
-    * Live or remote user testing at delivery milestones
+    * In-person or remote user testing at delivery milestones
 1. Introducting the _Lead the Way_ series for product managers
 1. Show, don't tell...sometimes
 1. Should you move to Federalist?

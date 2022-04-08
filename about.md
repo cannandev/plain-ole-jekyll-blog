@@ -9,6 +9,8 @@ Hi. I’m Claire Annan, otherwise known as @cannandev on the interwebs. I’m an
 
 I have a lot of knowledge to share about engineering best practices. I also have advice on engineering hiring, consulting and interdisciplinary dependencies on Agile teams. I love sharing my many funny stories about freelancing and being a minority in the tech world. You can use this site as a resource.
 
+> Claire is a great mentor. She always strives to educate and push others to excellence. She is really a gem. Thanks for everything! <cite>Eboni Kelly, User Researcher</cite>
+
 Content management systems are near and dear to my heart. Content managers are users too! I was a Drupal developer before 18F, so I’m comfortable working with that system. I also have no problem convincing partners why it may not be the appropriate platform for them 😏.
 
 I’m also passionate about user research and accessibility. I love working on projects that involve prototyping and user-testing features before pushing them out to the public. I really love digging into tech that allows us to design, build, test and iterate quickly…so full-stack JavaScript frameworks and CSS utility-first design systems are my friends.

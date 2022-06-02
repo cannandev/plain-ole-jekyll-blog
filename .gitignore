@@ -1,8 +1,9 @@
+_drafts
 _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
 vendor
 node_modules
-_posts
 */.DS_Store
+plain-jekyll-blog.code-workspace

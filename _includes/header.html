@@ -1,6 +1,6 @@
 <header class="relative">
   <!-- Skip link-->
-  <a href="#main-content" class="absolute -top-8 mt-neg-2 focus:top-0 p-2 bg-white z-10">Skip to main content</a>
+  <a class="absolute -top-8 mt-neg-2 focus:top-0 p-2 bg-white z-10" href="#main-content">Skip to main content</a>
 
   <!-- Navigation and logo -->
   <nav class="z-0">
@@ -8,9 +8,7 @@
       <div class="relative flex items-center justify-between h-16">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
           <!-- Mobile menu button-->
-          <button id="mobile-menu-toggle" type="button"
-            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-            aria-controls="mobile-menu" aria-expanded="false">
+          <button aria-controls="mobile-menu" aria-expanded="false" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" id="mobile-menu-toggle" type="button">
             <span class="sr-only">Open main menu</span>
             <!--
               Icon when menu is closed.
@@ -19,9 +17,8 @@
 
               Menu open: "hidden", Menu closed: "block"
             -->
-            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            <svg aria-hidden="true" class="block h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
             </svg>
             <!--
               Icon when menu is open.
@@ -30,9 +27,8 @@
 
               Menu open: "block", Menu closed: "hidden"
             -->
-            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            <svg aria-hidden="true" class="hidden h-6 w-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
             </svg>
           </button>
         </div>
@@ -42,17 +38,15 @@
           </div>
           <!-- Desktop menu, hide on mobile viewports less than sm -->
           <div class="hidden sm:block sm:ml-6">
-            <div class="flex space-x-4">
-              <a href="/"
-                class="text-gray-900 hover:bg-indigo-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                aria-current="page">Home</a>
-              <a href="/posts"
-                class="text-gray-900 hover:bg-indigo-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Articles</a>
-              <a href="/about"
-                class="text-gray-900 hover:bg-indigo-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
-              <a href="/contact"
-                class="text-gray-900 hover:bg-indigo-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
-            </div>
+            {% if  site.data.nav  %}
+              <ul class="flex space-x-4">
+                {% for item in site.data.nav %}
+                  <li>
+                    <a href="{{ item.url | url }}" class="text-gray-900 hover:bg-indigo-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium">{{ item.title }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            {% endif %}
           </div>
         </div>
       </div>
@@ -60,20 +54,17 @@
 
     <!-- Mobile menu, show/hide based on menu state. -->
     <div class="hidden" id="mobile-menu">
-      <div class="px-2 pt-2 pb-3 space-y-1">
-        <a href="/"
-          class="bg-indigo-500 hover:bg-indigo-700 text-white block px-3 py-2 rounded-md text-base font-medium"
-          aria-current="page">Home</a>
-
-        <a href="/posts/"
-          class="hover:text-gray-900 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium">Articles</a>
-
-        <a href="/about/"
-          class="hover:text-gray-900 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium">About</a>
-
-        <a href="/contact/"
-          class="hover:text-gray-900 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
-      </div>
+      {% if  site.data.nav  %}
+        <ul class="px-2 pt-2 pb-3 space-y-1">
+          {% for item in site.data.nav %}
+            <li>
+              <a href="{{ item.url | url }}" class="hover:bg-indigo-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+              {{ item.title }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
     </div>
   </nav>
 </header>

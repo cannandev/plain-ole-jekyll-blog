@@ -5,7 +5,12 @@ layout: default
 <article class="max-w-3xl mx-auto my-8 lg:my-10 px-4 lg:px-8" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header>
+    {% if page.category %}
     <strong class="rounded text-sm p-1 bg-indigo-100 text-black uppercase">{{ page.category }}</strong>
+<<<<<<< HEAD
+=======
+    {% endif %}
+>>>>>>> main
     <h1 class="text-4xl lg:text-5xl tracking-tight font-extrabold text-gray-900 md:text-6xl mt-8" itemprop="name headline">
       {{ page.title | escape }}
     </h1>

@@ -1,11 +1,9 @@
+_drafts
 _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
 vendor
 node_modules
-_posts
 */.DS_Store
-
-# Compiled css file
-dist/styles.css
+plain-jekyll-blog.code-workspace

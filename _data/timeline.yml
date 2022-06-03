@@ -1,16 +1,11 @@
-- title: Event 1
-  type: work
-  date: date
-  image: none
-- title: Event 2
-  type: life
-  date: date
-  image: none
-- title: Event 3
-  type: work
-  date: date
-  image: none
-- title: Event 4
-  type: work
-  date: date
-  image: none
+- company: 18F
+  company_url: http://18f.gsa.gov
+  title: Consulting Software Engineer
+  date_start: April 2020
+  date_end: today
+  image: https://18f.gsa.gov/assets/img/logos/18f-logo.svg
+  desc:
+    'I work with other government agencies to fix technical problems, build products, and improve government
+    technology services. I work on sites like <a class="underline hover:text-slate-800"
+    href="http://login.gov">login.gov</a> and <a class="underline hover:text-slate-800"
+    href="http://usgs.gov">usgs.gov</a>'

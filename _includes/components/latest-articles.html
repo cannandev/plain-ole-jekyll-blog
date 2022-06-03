@@ -1,7 +1,7 @@
 <section class="relative bg-indigo-700 py-16 px-8">
   <div class="max-w-7xl mx-auto">
     <h2 class="text-4xl tracking-tight font-extrabold text-white text-center">Latest articles</h2>
-    <div class="lg:grid grid-flow-col gap-8">
+    <div class="lg:grid grid-cols-3 gap-8">
       {% assign posts = site.posts | head(3) %}
       {%- if posts.size > 0 -%}
       {%- for post in posts limit:3 -%}

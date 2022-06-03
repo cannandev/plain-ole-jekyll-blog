@@ -7,9 +7,9 @@ references:
 
 ---
 
-Adding pa11y to your workflow
+Pa11y CI is an accessibility test runner built using Pa11y. Keep reading to find out how to run it on Continuous Integration environments and during local development.
 
-Using Code Sniffer and Axe in your workflow.
+Pa11y CI runs accessibility tests against multiple URLs and reports on any issues. This is best used during automated testing of your application and can act as a gatekeeper to stop a11y issues from making it to live.
 
 There's no doubt that checking accessibility as you develop is important. But what about when you have a large number of pages you want to check?
 
@@ -21,8 +21,6 @@ We already knew we had to suppress the warning about insufficient color contrast
 According to the axe docs, "Color transparency and opacity in the foreground is more difficult to detect and account for due to...Background colors in CSS pseudo-elements."
 
 For this project, I created a spreadsheet of all the errors and their components. This helped me keep track of which ones I needed to suppress and come back to, fix, or review.
-
-![Screenshot of pa11y issues]({{ baseurl }}/src/img/betaccdotgov-pa11y-issues.png)
 
 ## sitemap.xml
 

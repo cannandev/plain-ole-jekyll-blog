@@ -1,0 +1,12 @@
+{% if page.references %}
+<aside>
+  <h2 class="border-b text-3xl tracking-tight font-extrabold mt-8 mb-4">References</h2>
+  <ul class="list-none" role="list">
+    {% for link in page.references %}
+    <li>
+      <a class="text-blue-500 hover:underline hover:text-blue-700" href="{{ link.url }}">{{ link.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</aside>
+{% endif %}

@@ -16,6 +16,16 @@
       "end": "style"
     }
   ],
+  "jekyll": {
+    "correct": true,
+    "force_attribute": false,
+    "braces": true,
+    "preserve": 2,
+    "unformatted": false,
+    "brace_block": true,
+    "content": true,
+    "space_close": true
+  },
   "html": {
     "correct": true,
     "force_attribute": false,

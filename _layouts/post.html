@@ -40,19 +40,5 @@ layout: default
   </aside>
   {% endif %}
 
-  <footer class="flex justify-between  mt-8">
-		{% if page.previous %}
-    <a href="{{ page.previous.url }}">
-			<span class="block uppercase">Previous article</span>
-			<span class="block bold font-serif text-2xl">{{ page.previous.title }}</span>
-		</a>
-		{% endif %}
-
-		{% if page.next %}
-    <a href="{{ page.next.url }} " class="flex-grow text-right">
-			<span class="block uppercase">Next article</span>
-			<span class="block bold font-serif text-2xl">{{ page.next.title }}</span>
-		</a>
-		{% endif %}
-  </footer>
+  {% include components/post-pagination.html %}
 </article>

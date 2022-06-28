@@ -5,7 +5,7 @@ tags: bash
 category: tutorial
 references:
   - title: What’s a slug and why would I use one?
-  - url: https://itnext.io/whats-a-slug-f7e74b6c23e0
+    url: https://itnext.io/whats-a-slug-f7e74b6c23e0
 ---
 
 A small script that turns an article title into a filename.

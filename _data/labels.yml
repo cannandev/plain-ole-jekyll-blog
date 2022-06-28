@@ -1,0 +1,7 @@
+post:
+  prev: Previous article
+  next: Next article
+  categories:
+    - blog
+    - reviews
+    - tutorials

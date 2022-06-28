@@ -710,6 +710,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 10rem;
 }
 
+.w-1\/3 {
+  width: 33.333333%;
+}
+
 .max-w-7xl {
   max-width: 80rem;
 }
@@ -976,6 +980,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-serif {
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.font-sans {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .text-sm {

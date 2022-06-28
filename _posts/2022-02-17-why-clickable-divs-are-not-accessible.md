@@ -2,11 +2,13 @@
 layout: post
 title:  "Why clickable divs are not accessible"
 date:   2022-02-17
-category: design-for-devs
+category: blog
 tags: accessibility, design
 references:
   - title: Javascript solution to the clickable dev
     url: https://css-tricks.com/block-links-the-search-for-a-perfect-solution/#method-4-sprinkle-javascript-on-the-second-method
+  - title: Pitfalls of Card UIs
+    url: https://daverupert.com/2018/04/pitfalls-of-card-uis/
 ---
 
 "Can you make that whole thing clickable?" Here's why you should reconsider.

@@ -4,6 +4,8 @@ title:  "Build with me! Slugify text with a bash script"
 tags: bash
 category: tutorial
 references:
+  - title: What’s a slug and why would I use one?
+  - url: https://itnext.io/whats-a-slug-f7e74b6c23e0
 ---
 
 A small script that turns an article title into a filename.
@@ -14,9 +16,11 @@ A slug is a human-readable, unique identifier, used to identify a resource such 
 
 This tiny script is great for blog writing, but for creating system filenames too. Similar to Wordpress or other content management system that does this automatically when saving a file. Yes, I'm sure there are plugins that do this for Jekyll. But I wanted to write a bash script.
 
+> A good slug is short, descriptive, lower-case, has no accents, or ambiguous or hard to read-at-a-glance characters, and is unique. (Dave Sag)
+
 ## The script
 
-<script src="https://gist.github.com/cannandev/94781e818d62abca7e67b339725dd192.js"></script>
+<script src="https://gist.github.com/cannandev/d428d3d41e515b5346437fbbdd5296d0.js"></script>
 
 ## Create an alias
 
@@ -32,7 +36,9 @@ Navigating to the directory where I created the script isn't convenient either. 
 `slugify`, it gives me the following prompts:
 
 `Hi, clairefannan! Please enter the string you want to slugify:`
+
 hello sweet world
+
 `hello-sweet-world was copied to your clipboard.`
 
 That's it! Now I can paste the slug into my code editor. What will you use it for?

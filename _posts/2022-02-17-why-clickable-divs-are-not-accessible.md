@@ -2,7 +2,7 @@
 layout: post
 title:  "Why clickable divs are not accessible"
 date:   2022-02-17
-category: blog
+category: review
 tags: accessibility, design
 references:
   - title: Javascript solution to the clickable dev

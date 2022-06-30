@@ -2,8 +2,8 @@
 layout: post
 title:  "Why clickable divs are not accessible"
 date:   2022-02-17
-category: review
-tags: accessibility, design
+category: blog
+tags: accessibility design
 references:
   - title: Javascript solution to the clickable dev
     url: https://css-tricks.com/block-links-the-search-for-a-perfect-solution/#method-4-sprinkle-javascript-on-the-second-method

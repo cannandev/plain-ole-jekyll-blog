@@ -21,6 +21,11 @@ Here's why that's a bad idea.
 
 ## Users cannot select text
 
+Wrapping blocks of text in links (known as “block links” or “clickable boxes”) prevents users from selecting text. This is an accessibility blocker. Users may need to copy and paste text, highlight it in their browser, or activate their screen reader on selected content.
+
+The existing site uses block links in the “Learn More” blocks and “In this Section” lists (red shows links, yellow shows selected text):
+
+
 ## Forces unsemantic markup for the call to action
 
 Not clear what the call to action is if it's everything. Make it clear.

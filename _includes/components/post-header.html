@@ -27,4 +27,10 @@
       {{ mdate | date: date_format }}
     </time> {%- endif -%}
   </p>
+  tags
+  <ul>
+    {% for tag in page.tags %}
+      <li>{{tag}}</li>
+    {% endfor %}
+  </ul>
 </header>

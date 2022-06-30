@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Alternative text for images - Stop when you're overthinking it"
-tags: accessibility, images
+tags: accessibility images
 category: blog
 references:
   title: W3C Alt Decision Tree

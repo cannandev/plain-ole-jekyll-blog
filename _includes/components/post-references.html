@@ -1,10 +1,10 @@
-{% if page.references %}
+{% if page.references[0] %}
 <aside class="max-w-3xl mx-auto">
-  <h2 class="border-b text-3xl tracking-tight font-extrabold mt-8 mb-4">References</h2>
+  <h2 class="border-b text-3xl tracking-tight font-extrabold mt-8 mb-4">{{ site.data.labels.headings.references }}</h2>
   <ul class="list-none" role="list">
     {% for link in page.references %}
     <li>
-      <a class="text-sky-700 hover:underline hover:text-sky-500" href="{{ link.url }}">{{ link.title }}</a>
+      <a class="text-blue-500 hover:text-blue-700 hover:underline" href="{{ link.url }}">{{ link.title }}</a>
     </li>
     {% endfor %}
   </ul>

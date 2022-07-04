@@ -2,8 +2,8 @@
 layout: post
 title:  "Why clickable divs are not accessible"
 date:   2022-02-17
-category: review
-tags: accessibility, design
+category: blog
+tags: accessibility design
 references:
   - title: Javascript solution to the clickable dev
     url: https://css-tricks.com/block-links-the-search-for-a-perfect-solution/#method-4-sprinkle-javascript-on-the-second-method
@@ -20,6 +20,11 @@ Here's why that's a bad idea.
 ## Screen readers announce everything inside the link
 
 ## Users cannot select text
+
+Wrapping blocks of text in links (known as “block links” or “clickable boxes”) prevents users from selecting text. This is an accessibility blocker. Users may need to copy and paste text, highlight it in their browser, or activate their screen reader on selected content.
+
+The existing site uses block links in the “Learn More” blocks and “In this Section” lists (red shows links, yellow shows selected text):
+
 
 ## Forces unsemantic markup for the call to action
 

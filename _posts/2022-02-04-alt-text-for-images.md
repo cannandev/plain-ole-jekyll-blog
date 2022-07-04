@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  "Alternative text for images - Stop when you're overthinking it"
-tags: accessibility, images
+tags: accessibility images
 category: blog
 references:
-  title: W3C Alt Decision Tree
-  url: https://www.w3.org/WAI/tutorials/images/decision-tree/
-  title: Decorative images tutorial
-  url: https://www.w3.org/WAI/tutorials/images/decorative/
+  - title: W3C Alt Decision Tree
+    url: https://www.w3.org/WAI/tutorials/images/decision-tree/
+  - title: Decorative images tutorial
+    url: https://www.w3.org/WAI/tutorials/images/decorative/
 ---
 
 How many times have I sat staring at an image wondering, _How do I describe this thing?_. I was trying to come up with alternative text for an image. But I was missing a key step in "thinking accessibly".

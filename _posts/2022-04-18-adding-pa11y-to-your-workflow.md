@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Adding pa11y to your workflow"
-tags: accessibility, ci/cd
+tags: accessibility ci/cd
 category: blog
 references:
 

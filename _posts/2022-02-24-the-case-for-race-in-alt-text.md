@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "Should you describe race in alternative text?"
-tags: accessibility, images
+tags: accessibility images
 category: blog
 references:
-  title: The case for describing race in alternative text attributes
-  url: https://ux.shopify.com/the-case-for-describing-race-in-alternative-text-attributes-a093380634f2
+  - title: The case for describing race in alternative text attributes
+    url: https://ux.shopify.com/the-case-for-describing-race-in-alternative-text-attributes-a093380634f2
 ---
 
 I recently came across an article explaining the case for describing race in alternative text attributes. This is my counter article.
@@ -38,7 +38,7 @@ Probably not.
 
 As I wrote in a [related article](), alternative text in an image should help the user understanding the content near the image. If it does not give meaning to the subject, or you find yourself coming up with an elaborate description, the image is decorative. Consider a different approach to including it in your application.
 
-## Conclusion 
+## Conclusion
 
 Describe race in `alt` text when race is part of the context. And please make sure it's accurate. If you have to guess, leave it out.
 

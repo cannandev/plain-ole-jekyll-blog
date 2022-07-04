@@ -1,3 +1,8 @@
+headings:
+  latest: Latest articles
+  references: References
+buttons:
+  read: Read article
 post:
   prev: Previous article
   next: Next article

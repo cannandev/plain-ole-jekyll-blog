@@ -2,7 +2,7 @@
 layout: post
 title:  "Alternative text for images - Stop when you're overthinking it"
 tags: accessibility, images
-category: design-for-devs
+category: blog
 references:
   title: W3C Alt Decision Tree
   url: https://www.w3.org/WAI/tutorials/images/decision-tree/
@@ -13,7 +13,7 @@ references:
 How many times have I sat staring at an image wondering, _How do I describe this thing?_. I was trying to come up with alternative text for an image. But I was missing a key step in "thinking accessibly".
 
 I'm not alone. I've come across situations in engineering where the developer is left wondering, "What am I supposed to write as alt text for this image?" That's actually a great sign! The developer has incorporated good accessibility practices in their workflow. But when you're having trouble describing an image, that's actually an indicator that you should change your approach.
- 
+
 ## What is `alt` text?
 
 Alternative text, or `alt` text, is an HTML image attribute.
@@ -31,14 +31,14 @@ Alternative text describes the image. It is read out loud by screen-readers, whi
 
 > Where possible, decorative images should be provided using CSS background images instead.
   <cite>W3C</cite>
-  
+
 For some types of images, there are alternative approaches, such as using CSS background images for decorative images or web fonts instead of images of text.
 
 ### Background image example:
 
 ```<div class="billboard-media-image" style="background-image: url(https://assetsnffrgf-a.akamaihd.net/assets/m/502000143/univ/art/502000143_univ_lss_lg.jpg)"></div>
 ```
-JW.org 
+JW.org
 
 ### Web font example:
 
@@ -46,7 +46,7 @@ Cassie Blog[4^]
 
 ## Use an `alt` Decision tree
 
-If your image must be coded as an inline image (using the `img` tag), use the [W3C decision tree](W3C decision tree) to determine what to do with that `alt`. The 
+If your image must be coded as an inline image (using the `img` tag), use the [W3C decision tree](W3C decision tree) to determine what to do with that `alt`. The
 
 ## Considerations for Content Management Systems
 

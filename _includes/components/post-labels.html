@@ -1,0 +1,14 @@
+{%- if include.category -%}
+  {%- capture label_color -%}
+    {%- case include.category -%}
+    {%- when "tutorial" -%}
+    bg-red-100
+    {%- when "review" -%}
+    bg-sky-200
+    {%- else -%}
+    bg-indigo-100
+    {%- endcase -%}
+  {%- endcapture -%}
+  <strong class="rounded text-sm p-1 text-black uppercase {{ label_color }}">{{ include.category }}</strong>
+{%- endif -%}
+

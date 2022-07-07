@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Build with me! Writing a Node app to display Google Doc comments"
-tags: automation, nodejs
+tags: automation nodejs
 category: tutorial
 references:
 

@@ -14,9 +14,5 @@
       {{ mdate | date: date_format }}
     </time> {%- endif -%}
   </p>
-  <ul class="flex mt-8">
-    {% for tag in page.tags %}
-    <li class="border border-gray-200 text-gray-500 text-sm uppercase px-2 mr-2">{{ tag }}</li>
-    {% endfor %}
-  </ul>
+  {% include components/post-tags.html %}
 </header>

@@ -8,7 +8,7 @@
       {%- for post in posts limit:3 -%}
       <div
         class="flex flex-wrap flex-col items-start bg-white rounded p-4 mt-6 transform hover:-rotate-2 hover:drop-shadow-lg">
-        {% include components/post-labels.html category=post.category %}
+        {% include post__labels.html category=post.category %}
         <h3 class="font-bold text-xl border-b-4 border-b-amber-500 mt-4">{{ post.title | escape }}</h3>
         <p class="mt-6">{{ post.excerpt }}</p>
         <a href="{{ post.url | relative_url }}"

@@ -3,10 +3,23 @@ layout: default
 ---
 
 <article class="max-w-7xl mx-auto my-8 lg:my-10 px-4 lg:px-8" itemscope itemtype="http://schema.org/BlogPosting">
-  {% include components/post-header.html %}
+  <header class="max-w-3xl mx-auto">
+    {% include post__labels.html category=page.category %}
+    <h1 class="text-4xl lg:text-5xl tracking-tight font-extrabold text-gray-900 md:text-6xl mt-8"
+      itemprop="name headline">
+      {{ page.title | escape }}
+    </h1>
+    <span class="block w-40 h-1 lg:h-1.5 bg-amber-500 mt-2"></span>
+    {% include post__date.html %}
+    {% include post__tags.html %}
+  </header>
+
   <div class="max-w-3xl mx-auto content text-lg mt-8" itemprop="articleBody">
     {{ content }}
   </div>
-  {% include components/post-references.html %}
-  {% include components/post-pagination.html %}
+
+  <footer>
+    {% include post__references.html %}
+    {% include post__pagination.html %}
+  </footer>
 </article>

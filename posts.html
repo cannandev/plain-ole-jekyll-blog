@@ -9,7 +9,7 @@ title: All articles
 <ul>
   {%- for post in posts -%}
   <li class="mb-4 border rounded p-4 transform hover:-rotate-1">
-    {% include components/post-labels.html category=post.category %}
+    {% include post__labels.html category=post.category %}
     <a class="block text-2xl lg:text-4xl tracking-tight font-extrabold hover:text-indigo-700 hover:underline mt-4"
       href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
     {%- assign date_format = "%b %-d, %Y" -%}

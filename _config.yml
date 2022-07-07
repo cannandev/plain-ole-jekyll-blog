@@ -6,11 +6,17 @@ description: >- # this means to ignore newlines until "baseurl:"
   I'm a consulting software engineer. I like to write and talk about best practices, accessibility and my experiences.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Social settings
 twitter_username: cannandev
+twitter_title: "My Twitter feed @cannandev"
 github_username: cannandev
+github_title: My GitHub repos
+linkedin_username: ClaireAnnan
+linkedin_title: My LinkedIn page
 
 # Page settings
-permalink: /:categories/:title/
+permalink: /:categories/:title
 
 # Build settings
 # theme: minima

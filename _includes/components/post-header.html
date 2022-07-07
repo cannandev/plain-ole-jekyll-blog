@@ -1,18 +1,5 @@
 <header class="max-w-3xl mx-auto">
-  {% if page.category %}
-  {% capture label_color %}
-  {% case page.category %}
-  {% when "tutorial" %}
-  bg-sky-300
-  {% when "review" %}
-  bg-red-100
-  {% else %}
-  bg-indigo-100
-  {% endcase %}
-  {% endcapture %}
-
-  <strong class="rounded text-sm p-1 text-black uppercase {{ label_color }}">{{ page.category }}</strong>
-  {% endif %}
+  {% include components/post-labels.html category=page.category %}
   <h1 class="text-4xl lg:text-5xl tracking-tight font-extrabold text-gray-900 md:text-6xl mt-8"
     itemprop="name headline">
     {{ page.title | escape }}

@@ -8,12 +8,12 @@ title: All articles
 {%- if posts.size > 0 -%}
 <ul>
   {%- for post in posts -%}
-  <li class="mb-4">
-    <a class="text-2xl lg:text-4xl tracking-tight font-extrabold text-indigo-500 hover:text-indigo-700 hover:underline mt-8"
+  <li class="mb-4 border rounded p-4 transform hover:-rotate-1">
+    {% include components/post-labels.html category=post.category %}
+    <a class="block text-2xl lg:text-4xl tracking-tight font-extrabold hover:text-indigo-700 hover:underline mt-4"
       href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-    <strong class="rounded text-sm p-1 bg-indigo-100 text-black uppercase">{{ post.category }}</strong>
     {%- assign date_format = "%b %-d, %Y" -%}
-    <time class="block" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+    <time class="block mt-2" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
       Posted on {{ post.date | date: date_format }}
     </time>
   </li>
